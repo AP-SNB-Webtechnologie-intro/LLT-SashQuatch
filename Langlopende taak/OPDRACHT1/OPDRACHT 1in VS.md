@@ -5,7 +5,7 @@ Homepage*
 Sfeerbeeld: beknopte uitleg over de site, GG--GAMEGENERATIE
 
 
-Foto toevoegen van mezelf met headset aan. 
+Homepagepic.jpg
 
 -----------------------------------------------------------------------------------------------------------------
 OVERZICHTSPAGINA:
@@ -13,16 +13,23 @@ OVERZICHTSPAGINA:
 6 topics over gamen:
 GAME INDUSTRIE
 *Meer info over de recente evoluties in de gameindustrien,Esports teams opgelijst*
+foto: game industrie overzicht
 PC
 *Welke soorten games spelen we allemaal op pc*
+foto: steam overzicht
 CONSOLES
 *Welke consoles zijn er (geweest)?*
+foto: console overzicht
 MOBA GAMES
 *1 van mijn favoriete moba games:league of legends, nader toegelicht*
+foto:moba overzicht
 SPORT GAMES
 *De populairste sportgame die al jaren meedraaid: FIFA* 
+foto: fifa 2023 overzicht
 SHOOTERS
 *Zowel op pc als console zijn shooters hot, dewelke ken jij?*
+foto:shooter overzicht
+
 ----------------------------------------------------------------------------------------------------------------
 [Topic pg1]
 Titel topic: Gameindustrie
@@ -61,7 +68,7 @@ Lijst: *Lijst met 20 ESPORTS teams en opbrengsten van tornooien*
 19.	Team SoloMid	$11,689,610.65	948 Tournaments
 20.	OpTic Gaming	$11,671,624.30	408 Tournaments
 
-Figure: afbeelding met bijschrift
+Figure:game industrie growth
 ----------------------------------------------------------------------------------------------------------------
 [Topic pg2]
 Titel topic: PC
@@ -87,7 +94,7 @@ Lijst:
 -Casual games 
 
 
-Figure: afbeelding met bijschrift 
+Figure:  Game platforms pc top 
 ----------------------------------------------------------------------------------------------------------------
 [Topic pg3]
 Titel topic: Consoles
@@ -206,7 +213,7 @@ Negende generatie (2020-heden)
     Nintendo Switch Oled (2021)
     Atari VCS (2021)
 
-Figure: afbeelding met bijschrift
+Figure: games-consoles
 Semantische tabel met consoles en uitgifte data
 ( met bijschrift) 
 ----------------------------------------------------------------------------------------------------------------
@@ -235,7 +242,7 @@ De nieuwere gamemode TFT staat voor Teamfight Tactics, wat een strategisch spel 
 
 
 
-Figure: afbeelding met bijschrift
+Figure: league map 
 ----------------------------------------------------------------------------------------------------------------
 
 [Topic pg5]
@@ -246,6 +253,8 @@ Ondertitel:FIFA
 FIFA is een populaire videospelserie die wordt ontwikkeld door EA Sports. Het staat voor "Fédération Internationale de Football Association" en is gebaseerd op het wereldwijde voetbal. In het spel kun je teams en spelers van over de hele wereld beheren en besturen, en deelnemen aan verschillende competities en toernooien. FIFA-spellen worden elk jaar vernieuwd en bijgewerkt met nieuwe functies, spelers en teams. Het is beschikbaar op verschillende platforms, waaronder consoles, pc en mobiele apparaten.
 
 Het biedt een realistische voetbalervaring met gedetailleerde graphics, realistische spelersbewegingen en geluidseffecten. Het kan een leuke manier zijn om jezelf onder te dompelen in de wereld van voetbal. FIFA biedt verschillende spelmodi, waaronder online multiplayer, waar je kunt strijden tegen andere spelers over de hele wereld. Dit kan een geweldige manier zijn om je vaardigheden te testen en te verbeteren.
+
+Tegenwoordig hebben alle grote sportclubs ook hun Esports team dat hun vertegenwoordigt. 
 
 Elke speler en elk team hebben quoteringen zoals ook de rangschikking in de echte voetbalwereld.
 Hieronder een lijst met de best gequoteerde spelers op FIFA 2023
@@ -279,7 +288,7 @@ Ons land is toch mooi vertegenwoordigd met 2 plaatsen in de top 10: Kevin De Bru
 
 
 
-Figure: afbeelding met bijschrift
+Figure: fifa player picture
 ----------------------------------------------------------------------------------------------------------------
 [Topic pg6]
 Titel topic: SHOOTERS
@@ -290,7 +299,7 @@ Een van de belangrijkste factoren is het verschil in inputmethoden. Spelers op p
 
 Daarnaast kunnen er ook verschillen zijn in de prestaties van de hardware. Pc's hebben over het algemeen krachtigere hardware dan consoles, waardoor pc-spelers mogelijk een betere grafische kwaliteit, hogere framesnelheden en kortere laadtijden hebben.
 Sommige shooters implementeren daarom crossplay met beperkingen, zoals het scheiden van spelers op basis van het platform dat ze gebruiken of het toestaan van spelers om crossplay in- en uit te schakelen. Dit kan helpen om de speelervaring eerlijker te maken.
-Of misschien moeten de consoles het mogelijk maken er een toetsenbord op aan te sluiten? 
+Of misschien moeten de consoles het mogelijk maken er een toetsenbord op aan te sluiten? Hoewel dit de laatste jaren meer en meer gelijk getrokken is zal het toch een discusie blijven. 
 
 Hierbij een lijst met veel gespeelde shooters
 Lijst:
@@ -303,13 +312,28 @@ Lijst:
 -Call of Duty: Warzone 2.0
 -Counter strike global offensive
 
-Figure: afbeelding met bijschrift
+Figure: vergelijk Xbox en pc
 ----------------------------------------------------------------------------------------------------------------
 Contactpagina:
 Contact admin en contact webdesigner
+
 
 ----------------------------------------------------------------------------------------------------------------
 Opzoekwerk API:
 https://www.freetogame.com/api-doc
 https://www.freetogame.com/api/games?category=shooter
-te gebruiken op
+te gebruiken op shooter pagina
+(uitbreiden, eventueel andere api zoeken)
+
+----------------------------------------------------------------------------------------------------------------
+
+Verschil in sites is groot, veel basic sites met info. De sites van de gameplatformen en proffesionele gamesites zijn wel heel goed uitgewerkt. 
+
+Verschillende kleuren, sommige simpel witte achtergrond. 
+
+
+Evaluatie:
+-Zelf gekleurde achtergrond gebruiken met complementerende kleur als letterkleur
+-Pagina's goed structureren
+-plaatsbepaling van alle input is belangrijk om interesse hoog te houden 
+-
