@@ -3,7 +3,13 @@ www.gamegeneratie.be
 Homepage* 
 
 Sfeerbeeld: beknopte uitleg over de site, GG--GAMEGENERATIE
+Welkom op de homepagina van GameGeneratie.be. Op onze site vind u informatie over verschillende gamesoorten, consoles en nog veel meer van de gamesector.
+We kunnen niet meer zeggen dat games slechts voor kinderen zijn nu we aan de generatie komen waar ouders het tegen hun kinderen opnemen in de grootste online games. 
+De sector groeide immens en daar komt ook veel geld bij te kijken. Wie had ook kunnen zeggen dat gamer zijn effectief een beroep zou worden wat zeer goed betaald wordt.
 
+Hoewel ik zelf graag game zie ik me nog geen prof worden. Maar we bekijken op onze site zeker verschillende toppers.
+
+GAME ON!!!!
 
 Homepagepic.jpg
 
@@ -12,7 +18,8 @@ OVERZICHTSPAGINA:
 
 6 topics over gamen:
 GAME INDUSTRIE
-*Meer info over de recente evoluties in de gameindustrien,Esports teams opgelijst*
+*Meer info over de recente evoluties in de gameindustrien,Esports teams opgelijst*Evolutie van de game-industrie,
+Welke teams staan aan de top, 
 foto: game industrie overzicht
 PC
 *Welke soorten games spelen we allemaal op pc*
