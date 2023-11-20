@@ -1,0 +1,18 @@
+html, body {
+  box-sizing: border-box;
+  background-color: #4d4d4d;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+  text-decoration-color: rgb(179, 255, 0)
+  height: 100%;
+  width: 100%;
+}
+a, a:hover,h1,h2,p {
+  text-decoration: none;
+  color: #a8e600;
+}
+
+.special{
+  color: #423932;
+}
