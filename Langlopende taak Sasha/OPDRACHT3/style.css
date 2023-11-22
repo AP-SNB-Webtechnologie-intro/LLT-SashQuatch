@@ -1,6 +1,6 @@
 html, body {
   box-sizing: border-box;
-  background-color: rgb(7, 7, 7);
+  background-color: rgb(13, 13, 13);
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
@@ -14,5 +14,5 @@ a, a:hover,h1,h2,p {
 }
 
 .special{
-  color: #1b1818;
+  color: #a28181;
 }
