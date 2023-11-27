@@ -7,6 +7,10 @@ html, body {
   text-decoration-color: rgb(179, 255, 0)
   height: 100%;
   width: 100%;
+  background-size: cover
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 a, a:hover,h1,h2,p {
   text-decoration: none;
@@ -17,8 +21,29 @@ a, a:hover,h1,h2,p {
   color: #a28181;
 }
 
-.img100{
-    width: 200px;
-    height: 300px;
-    object-fit: fill;
-  }
+
+.imgbackground {
+  image-size: cover}
+
+.overlay-text {
+    position: absolute;
+    top: 15%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgb(13, 13, 13);
+    color:#a8e600;
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
