@@ -50,3 +50,7 @@ a, a:hover,h1,h2,p {
 .nav-link {
   font-size: 18px; 
 }
+
+.fixedsizeimg {
+  size: 150px;
+}
