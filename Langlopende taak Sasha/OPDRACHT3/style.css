@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  text-decoration-color: rgb(179, 255, 0)
+  text-decoration-color: rgb(255, 255, 255)
   height: 100%;
   width: 100%;
   background-size: cover
@@ -53,4 +53,14 @@ a, a:hover,h1,h2,p {
 
 .fixedsizeimg {
   size: 150px;
+}
+
+table, th,td {
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
