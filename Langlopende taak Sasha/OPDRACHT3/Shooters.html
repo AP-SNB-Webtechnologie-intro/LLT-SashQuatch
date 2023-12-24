@@ -8,14 +8,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
 <header class="row m-0">
-<img src="afbeeldingen/category-lighting-1.jpeg" alt="Logo"  class="container-fluid">
+<img src="afbeeldingen/category-lighting-1.jpeg" alt="Afbeelding van gamer"  class="container-fluid">
 
 
 <nav class="navbar navbar-expand-md navbar-dark">
@@ -29,10 +27,10 @@
       <a class="nav-item p-3 m-5 border-0" style="font-size: 30px;" href="./index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./2.Overzicht.html">Overzicht</a>
+      <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./Overzicht.html">Overzicht</a>
     </li>
     <li class="nav-item">
-      <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./9contact.html">Contact</a>
+      <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./contact.html">Contact</a>
     </li>
   </ul>
   <div>
@@ -44,7 +42,7 @@
         <li><a class="dropdown-item" href="./Gameindustrie.html">Game industrie</a></li>
         <li><a class="dropdown-item" href="./Consoles.html">Consoles</a></li>
         <li><a class="dropdown-item" href="./Gamenoppc.html">Gamen op PC</a></li>
-        <li><a class="dropdown-item" href="./6Mobagames.html">Moba games</a></li>
+        <li><a class="dropdown-item" href="./Mobagames.html">Moba games</a></li>
         <li><a class="dropdown-item" href="./Shooters.html">Shooters</a></li>
         <li><a class="dropdown-item" href="./Sportgames.html">Sport games</a></li>
       
@@ -93,6 +91,7 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">GAME</th>
+              </tr>
             <tr>
               <td scope="row">1</td>
               <td scope="row">Apex legends</td>
@@ -106,13 +105,49 @@
               <td scope="row">Destiny 2</td>
             </tr>
             </table>
-
-
-
-
-
-
         </article>
+
+        <h2>Games in de categorie Shooter</h2>
+        <div id="gameList" class="container-fluid p-3">
+        </div>
+      </article>
+      <script>
+        $(document).ready(function () {
+
+     var apiUrl = 'https://www.freetogame.com/api/games?category=shooter';
+
+  $.ajax({
+    url: apiUrl,
+    type: 'GET',
+    dataType: 'json',
+    success: function (data) {
+      displayGames(data);
+    },
+    error: function (error) {
+      console.log('Er is een fout opgetreden bij het ophalen van gegevens:', error);
+    }
+  });
+
+  function displayGames(data) {
+    var gameList = $('#gameList');
+
+    // Leeg de gameList voordat je nieuwe gegevens toevoegt
+    gameList.empty();
+
+    // Loop door de games en voeg de informatie toe aan de pagina
+    $.each(data, function (index, game) {
+      var gameHtml = '<div class="col-md-4">';
+      gameHtml += '<h3>' + game.title + '</h3>';
+      gameHtml += '<p>' + game.short_description + '</p>';
+      // Voeg andere relevante informatie toe zoals game.img en game.genre
+      gameHtml += '</div>';
+
+      // Voeg het gegenereerde HTML toe aan de gameList
+      gameList.append(gameHtml);
+    });
+  }
+});
+      </script>
       </main>
        
         
@@ -120,7 +155,7 @@
         <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
         <p>Game Generatie<br>
           Email: <a href="Sasha@gamegeneratie.be">Sasha@gamegeneratie.be</a><br>
-           of via onze <a href="./9contact.html" style="text-decoration: underline">contactpagina</a> of socials </p>
+           of via onze <a href="./contact.html" style="text-decoration: underline">contactpagina</a> of socials </p>
         <ul class="list-inline socials">
           </li>
           <li class="list-inline-item">
@@ -135,7 +170,5 @@
           </li>
         </ul>
       </aside>
-
-
       <footer class="container-fluid text-center h6 small p-4">© Sashquatch inc.</footer>
 </body>  

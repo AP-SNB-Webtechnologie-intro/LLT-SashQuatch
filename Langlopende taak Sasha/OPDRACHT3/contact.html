@@ -9,16 +9,15 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
       <link rel="stylesheet" href="style.css">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      
-</head>
 
+</head>
 <body class="p-3 m-0 border-0 bd-example">
   <header class="row m-0">
-    <img src="afbeeldingen/category-lighting-1.jpeg" alt="Logo"  class="container-fluid">
-    
-  
+    <img src="afbeeldingen/category-lighting-1.jpeg" alt="Afbeelding van gamer"  class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark">
       <section class="container-fluid">
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +29,13 @@
           <a class="nav-item p-3 m-5 border-0" style="font-size: 30px;" href="./index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./2.Overzicht.html">Overzicht</a>
+          <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./Overzicht.html">Overzicht</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./9contact.html">Contact</a>
+          <a class="nav-item p-3 m-5 border-0 " style="font-size: 30px;" href="./contact.html">Contact</a>
         </li>
       </ul>
-      <div>
+        <section>
         <li  class="nav-item dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Topics
@@ -45,7 +44,7 @@
             <li><a class="dropdown-item" href="./Gameindustrie.html">Game industrie</a></li>
             <li><a class="dropdown-item" href="./Consoles.html">Consoles</a></li>
             <li><a class="dropdown-item" href="./Gamenoppc.html">Gamen op PC</a></li>
-            <li><a class="dropdown-item" href="./6Mobagames.html">Moba games</a></li>
+            <li><a class="dropdown-item" href="./Mobagames.html">Moba games</a></li>
             <li><a class="dropdown-item" href="./Shooters.html">Shooters</a></li>
             <li><a class="dropdown-item" href="./Sportgames.html">Sport games</a></li>
           
@@ -57,8 +56,7 @@
             <button type="button" type="submit" class="btn btn-secondary">zoeken</button>
           </form>
        
-      </section>
-    
+      </section> 
     </nav>
 </header>
 
@@ -128,23 +126,37 @@
                     <textarea class="form-control" id="Textarea1" rows="3"></textarea>
 
                     <INPUT class="m-3" TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
-                  </div>
-                  <iframe src="https://www.google.com/maps/d/embed?mid=1PBDh5W3CiWjjXf9Z6wgQkInr9J7RkAM&ehbc=2E312F" width="640" height="480"></iframe>      
-                  
-    
+                    </div>
           </form>
     
-          
+          <section class="text-center">
+            <h2>Ons hoofdkwartier</h2>
+            <div id="map">
+              <a href="https://www.maptiler.com"><img class="MAP1" src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+            </div>
+            <script>
+              const key = 'UFWvjBcTWJk7Royb0Q3H';
+              const map = L.map('map').setView([51.22978210449219, 4.417099952697754], 13); //starting position
+              L.tileLayer(`https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${key}`,{ //style URL
+                tileSize: 512,
+                zoomOffset: -1,
+                minZoom: 1,
+                crossOrigin: true
+              }).addTo(map);
+    
+              var marker = L.marker([51.22978210449219, 4.417099952697754]).addTo(map);
+            </script>
+          </section>
         
       </main>
 
       <aside class="col-md-3">
-        <img src="./afbeeldingen/discord.jpg" alt="discord" class="container-fluid">
+        <img src="./afbeeldingen/discord.jpg" alt="discord" class="container-fluid pt-3">
         <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
       
         <p>Game Generatie<br>
           Email: <a href="Sasha@gamegeneratie.be">Sasha@gamegeneratie.be</a><br>
-           of via onze <a href="./9contact.html" style="text-decoration: underline">contactpagina</a> of socials </p>
+           of via onze <a href="./contact.html" style="text-decoration: underline">contactpagina</a> of socials </p>
         <ul class="list-inline socials">
           </li>
           <li class="list-inline-item">
@@ -164,3 +176,4 @@
       <footer class="container-fluid text-center h6 small p-4">© Sashquatch inc.</footer>
 
 </body>  
+

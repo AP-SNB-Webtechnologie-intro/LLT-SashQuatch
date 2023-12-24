@@ -64,3 +64,12 @@ table, th,td {
   margin-left: auto;
   margin-right: auto;
 }
+
+#gameList {
+  min-height: 300px; /* Pas dit aan aan de gewenste hoogte */
+}
+
+.MAP1 {
+  height: 400px;
+  width: 100%;
+}

@@ -64,3 +64,13 @@ table, th,td {
   margin-left: auto;
   margin-right: auto;
 }
+
+.topic-container {
+  border-style: groove;
+  border-color: rgb(127, 206, 255);
+}
+
+.MAP1 {
+  height: 400px;
+  width: 100%;
+}
