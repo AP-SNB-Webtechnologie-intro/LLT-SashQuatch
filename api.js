@@ -1,27 +1,17 @@
- // Functie om de API-gegevens op te halen en weer te geven
- async function fetchData() {
-    try {
-        const response = await fetch('https://www.freetogame.com/api/games?category=shooter');
-        const data = await response.json();
-        displayData(data);
-    } catch (error) {
-        console.error('Fout bij het ophalen van API-gegevens:', error);
-    }
+const axios = require('axios');
+
+const options = {
+  method: 'GET',
+  url: 'https://esport-matches.p.rapidapi.com/tournament/1',
+  headers: {
+    'X-RapidAPI-Key': '17fdfafc83mshb4ad8cc3f745875p1146eejsnba0147bcd16b',
+    'X-RapidAPI-Host': 'esport-matches.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
 }
-
-// Functie om alleen de game-URL's weer te geven
-function displayData(data) {
-    const apiDataDiv = document.getElementById('apiData');
-
-    // Itereer over de games en voeg de URL's toe aan de pagina
-    data.forEach(game => {
-        const gameDiv = document.createElement('div');
-        const gameUrl = document.createElement('p');
-        gameUrl.innerHTML = `<a href="${game.game_url}" target="_blank">${game.game_url}</a>`;
-        gameDiv.appendChild(gameUrl);
-        apiDataDiv.appendChild(gameDiv);
-    });
-}
-
-// Roep de fetchData-functie aan wanneer de pagina is geladen
-window.onload = fetchData;
