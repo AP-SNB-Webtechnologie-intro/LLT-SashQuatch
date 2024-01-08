@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="./api.js"></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -108,31 +109,6 @@
         </article>
         
         <div id="apiData" class="text-white"></div>
-        <script>
-          fetchData() 
-              try {
-                  const response =fetch('https://www.freetogame.com/api/games?category=shooter');
-                  const data =response.json();
-                  displayData(data);
-              } 
-              catch (error) {
-                  console.error('Fout bij het ophalen van API-gegevens:', error);
-              }
-        
-  
-          function displayData(data) {
-              const apiDataDiv = document.getElementById('apiData');
-  
-              data.forEach  
-                  const game = document.createElement();
-                  const gameUrl = document.createElement();
-                  gameUrl.innerHTML = `<a href="${game.game_url}">${game.game_url}</a>`;
-                  gameDiv.appendChild(gameUrl);
-                  apiDataDiv.appendChild(gameDiv);
-              };
-          
-  
-      </script>
       </main>
        
         
