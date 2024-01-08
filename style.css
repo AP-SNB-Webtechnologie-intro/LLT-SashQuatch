@@ -74,6 +74,7 @@ table, th,td {
   width: 100%;
 }
 
-#api-data {
-  height: 200px; /* Je kunt hier de gewenste hoogte instellen */
+.table-spacing {
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
