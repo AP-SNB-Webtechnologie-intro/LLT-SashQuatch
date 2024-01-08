@@ -106,9 +106,54 @@
             </tr>
             </table>
         </article>
-
-  <script src="API.js" type="module">
-  </script>
-</body>
-
-</html>
+        
+        <div id="apiData" class="text-white"></div>
+        <script>
+          fetchData() 
+              try {
+                  const response =fetch('https://www.freetogame.com/api/games?category=shooter');
+                  const data =response.json();
+                  displayData(data);
+              } 
+              catch (error) {
+                  console.error('Fout bij het ophalen van API-gegevens:', error);
+              }
+        
+  
+          function displayData(data) {
+              const apiDataDiv = document.getElementById('apiData');
+  
+              data.forEach  
+                  const game = document.createElement();
+                  const gameUrl = document.createElement();
+                  gameUrl.innerHTML = `<a href="${game.game_url}">${game.game_url}</a>`;
+                  gameDiv.appendChild(gameUrl);
+                  apiDataDiv.appendChild(gameDiv);
+              };
+          
+  
+      </script>
+      </main>
+       
+        
+      <aside class="col-md-3">
+        <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+        <p>Game Generatie<br>
+          Email: <a href="Sasha@gamegeneratie.be">Sasha@gamegeneratie.be</a><br>
+           of via onze <a href="./contact.html" style="text-decoration: underline">contactpagina</a> of socials </p>
+        <ul class="list-inline socials">
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <footer class="container-fluid text-center h6 small p-4">© Sashquatch inc.</footer>
+</body>  

@@ -9,8 +9,8 @@ html, body {
   width: 100%;
   background-size: cover
   background-repeat: no-repeat;
-  background-position: center center;
-}
+  background-position: center center;}
+
 a, a:hover,h1,h2,p {
   text-decoration: none;
   color: #ffffff;
@@ -72,4 +72,8 @@ table, th,td {
 .MAP1 {
   height: 400px;
   width: 100%;
+}
+
+#apiData {
+  height: 200px; /* Je kunt hier de gewenste hoogte instellen */
 }
